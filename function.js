@@ -200,7 +200,7 @@ function proper_feedback(response, explanation) {
     <div class="card">
     <div class="card bg-warning text-white">
     <div class="card-body"><h3>${explanation}</h3></div>
-    <div class="card-footer"><form><input class="btn btn-danger" type="submit" value="Got It!"></form></div>
+    <div class="card-footer"><form><input class="btn btn-danger" type="submit" value="OK"></form></div>
     </div>
     </div>`
     return feedback_text

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="functions.js"></script>
+  <!-- Title -->
+  <h2 id="Intro">Which Language Have You Mastered? </h2>
+<div class="jumbotron text-center" style="background:grey; color:black;">
+  <h2 id="title">Quiz</h2>
+</head>
+<body>
+
+  <div class="row">
+  <div class="col-lg-5">
+        
+    
+        <div id="login_view"> 
+          <form id="quiz_selection_form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="QuizField">Choose Quiz:</label><br>
+            <select class="custom-select" id="QuizField" name="QuizField">
+              <option value="HTML Quiz"> HTML </option>
+              <option value="JavaScript Quiz">JavaScript</option>
+            </select></br><br>
+            <input class="beginning button" id="startclock" type="submit" value="Submit">
+          </form>
+        </div>
+
+    <div id="timer_view">
+            <i class="stopwatch"></i> <label id="minutes">00</label>:<label id="seconds">00</label>
+          </div>
+        
+        <div id="quiz_view"></div>
+        <div id="encouragement_view"></div>
+        <div id="feedback_view"></div>
+        <div id="quiz_complete_view"></div>
+        <div id="scoreboard_view"></div>
+
+    
+         
+
+    </body>
+    </html>

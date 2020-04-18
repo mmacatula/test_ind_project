@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded',function(){
       appState.current_api_endpoint = 'https://my-json-server.typicode.com/mmacatula/project_4_JavaScript_quiz_data/JavaScriptQuiz'
       get_api_data('https://my-json-server.typicode.com/mmacatula/project_4_JavaScript_quiz_data/JavaScriptQuiz');
     }
-    //Stop the default handling of the on submit button
+   
     return false;
   }
 
@@ -41,15 +41,15 @@ document.addEventListener('DOMContentLoaded',function(){
 
 function get_api_data(api_endpoint){
   const request  = new XMLHttpRequest();
-  // Configure the request, set the method (GET) and the end-point.
+ 
   request.open('GET', api_endpoint);
-  // Configure the call-back .
+  
   request.onload = function () {
     data = JSON.parse(request.responseText);
     console.log(data);
     generate_quiz(data, api_endpoint)
   }
-  // Invoke the network request.
+ 
   request.send();
 }
 
@@ -69,8 +69,7 @@ function generate_quiz(data, api_endpoint){
     update_scoreboard()
     console.log(response)
     proper_feedback(response, data[i].explanation)
-    // console.log(encouragement_text)
-    // console.log(feedback_text)
+    
     if (response == 'Correct'){
       show_only_encouragement()
       document.querySelector("#encouragement_view").innerHTML = encouragement_text;
